@@ -1,60 +1,263 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Primeiro Site</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedro Prado — Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Syne:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
 </head>
-<body style="margin:0; font-family: Arial, sans-serif; background-color:#0f172a; color:#e2e8f0;">
 
-    <!-- Cabeçalho -->
-    <header style="background: linear-gradient(90deg, #1e293b, #334155); padding: 30px; text-align:center;">
-        <h1 style="margin:0; font-size: 2.5em;">Pedro Prado</h1>
-        <p style="margin-top:10px; color:#94a3b8;">Desenvolvedor em formação</p>
-    </header>
+<body>
 
-    <!-- Sobre mim -->
-    <section style="padding: 40px; max-width: 900px; margin:auto;">
-        <h2 style="border-bottom:2px solid #334155; padding-bottom:10px;">Sobre mim</h2>
-        <p style="line-height:1.6; margin-top:15px;">
-            Olá! Sou um desenvolvedor em aprendizado com interesse em sistemas operacionais,
-            programação de baixo nível e desenvolvimento de software. Tenho experiência com
-            linguagens como Java e C, além de conhecimentos em HTML e CSS. Estou sempre buscando
-            evoluir minhas habilidades e criar projetos cada vez mais desafiadores.
-        </p>
-    </section>
+  <nav>
+    <a href="#hero" class="nav-logo">Pedro<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">// sobre</a></li>
+      <li><a href="#projects">// projetos</a></li>
+      <li><a href="#contact">// contato</a></li>
+    </ul>
+  </nav>
 
-    <!-- Projetos -->
-    <section style="padding: 40px; background-color:#020617;">
-        <h2 style="text-align:center; margin-bottom:30px;">Projetos</h2>
+  <section id="hero">
+    <div class="hero-left">
+      <div class="hero-tag">disponível para oportunidades</div>
+      <h1>Pedro<br><em>Prado.</em></h1>
+      <p class="hero-desc">
+        Estudante de <strong>Sistemas de Informação</strong> no IFF Itaperuna. Apaixonado por <strong>programação de
+          baixo nível</strong>,
+        com mais experiência e afinidade no <strong>backend</strong> — e com objetivo de me tornar um
+        <strong>desenvolvedor fullstack</strong>.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">ver projetos →</a>
+        <a href="https://github.com/PedroPrado23" target="_blank" class="btn-ghost">github.com/PedroPrado23</a>
+      </div>
+    </div>
 
-        <div style="display:flex; gap:20px; flex-wrap:wrap; justify-content:center;">
-
-            <!-- Card 1 -->
-            <div style="background:#1e293b; padding:20px; border-radius:12px; width:250px; box-shadow:0 4px 10px rgba(0,0,0,0.3);">
-                <h3>Projeto 1</h3>
-                <p>Um sistema em Java utilizando orientação a objetos para gerenciamento de dados.</p>
-            </div>
-
-            <!-- Card 2 -->
-            <div style="background:#1e293b; padding:20px; border-radius:12px; width:250px; box-shadow:0 4px 10px rgba(0,0,0,0.3);">
-                <h3>Projeto 2</h3>
-                <p>Aplicação em C com foco em estrutura de dados e manipulação de memória.</p>
-            </div>
-
-            <!-- Card 3 -->
-            <div style="background:#1e293b; padding:20px; border-radius:12px; width:250px; box-shadow:0 4px 10px rgba(0,0,0,0.3);">
-                <h3>Projeto 3</h3>
-                <p>Site simples utilizando HTML e CSS com layout moderno e responsivo.</p>
-            </div>
-
+    <div class="hero-terminal">
+      <div class="terminal-bar">
+        <div class="terminal-dot td-red"></div>
+        <div class="terminal-dot td-yellow"></div>
+        <div class="terminal-dot td-green"></div>
+        <span class="terminal-title">pedro@dev ~ zsh</span>
+      </div>
+      <div class="terminal-body">
+        <div><span class="t-prompt">~/dev</span> <span class="t-cmd">cat developer.json</span></div>
+        <div class="t-out">{</div>
+        <div class="t-out">&nbsp;&nbsp;<span class="t-key">"nome"</span>: <span class="t-str">"Pedro Prado"</span>,
         </div>
-    </section>
+        <div class="t-out">&nbsp;&nbsp;<span class="t-key">"curso"</span>: <span class="t-str">"Sistemas de
+            Informação"</span>,</div>
+        <div class="t-out">&nbsp;&nbsp;<span class="t-key">"stack"</span>: [</div>
+        <div class="t-out">&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-str">"C"</span>, <span class="t-str">"Java"</span>,
+          <span class="t-str">"Spring Boot"</span>,
+        </div>
+        <div class="t-out">&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-str">"HTML/CSS/JS"</span>, <span
+            class="t-str">"Linux"</span></div>
+        <div class="t-out">&nbsp;&nbsp;],</div>
+        <div class="t-out">&nbsp;&nbsp;<span class="t-key">"foco"</span>: <span class="t-str">"fullstack"</span>,</div>
+        <div class="t-out">&nbsp;&nbsp;<span class="t-key">"paixao"</span>: <span class="t-str">"sistemas de baixo
+            nível"</span></div>
+        <div class="t-out">}</div>
+        <div style="margin-top: 0.5rem"><span class="t-prompt">~/dev</span> <span class="t-cursor"></span></div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Rodapé -->
-    <footer style="background:#1e293b; text-align:center; padding:20px; margin-top:30px;">
-        <p style="margin:0; color:#94a3b8;">© 2026 Pedro Prado - Todos os direitos reservados</p>
-    </footer>
+  <!-- SKILLS STRIP -->
+  <div id="skills">
+    <div class="skills-scroll">
+      <span class="skill-item"><span class="skill-dot">▲</span> C Language</span>
+      <span class="skill-item"><span class="skill-dot">▲</span> Java</span>
+      <span class="skill-item"><span class="skill-dot">▲</span> Spring Boot</span>
+      <span class="skill-item"><span class="skill-dot">▲</span> REST APIs</span>
+      <span class="skill-item"><span class="skill-dot">▲</span> HTML / CSS / JS</span>
+      <span class="skill-item"><span class="skill-dot">▲</span> Linux</span>
+      <span class="skill-item"><span class="skill-dot">▲</span> Git</span>
+      <span class="skill-item"><span class="skill-dot">▲</span> Sistemas Operacionais</span>
+
+      <span class="skill-item"><span class="skill-dot">▲</span> C Language</span>
+      <span class="skill-item"><span class="skill-dot">▲</span> Java</span>
+      <span class="skill-item"><span class="skill-dot">▲</span> Spring Boot</span>
+      <span class="skill-item"><span class="skill-dot">▲</span> REST APIs</span>
+      <span class="skill-item"><span class="skill-dot">▲</span> HTML / CSS / JS</span>
+      <span class="skill-item"><span class="skill-dot">▲</span> Linux</span>
+      <span class="skill-item"><span class="skill-dot">▲</span> Git</span>
+      <span class="skill-item"><span class="skill-dot">▲</span> Sistemas Operacionais</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div>
+      <p class="section-label">sobre mim</p>
+      <h2>Código que vai fundo.</h2>
+    </div>
+    <div>
+      <p class="about-text">
+      <p>Sou estudante de <strong>Sistemas de Informação</strong> no IFF Itaperuna.</p>
+      <p>Gosto de entender como as coisas realmente funcionam — gerenciamento de memória, concorrência com threads,
+        sistemas operacionais. Tenho mais afinidade com o <strong>backend</strong> e programação de baixo nível, mas
+        estou expandindo para me tornar um <strong>desenvolvedor fullstack</strong>.</p>
+      </p>
+      <div class="stats-grid">
+        <div class="stat-cell">
+          <div class="stat-num">SI</div>
+          <div class="stat-label">IFF Itaperuna</div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-num">Java</div>
+          <div class="stat-label">Backend</div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-num">C</div>
+          <div class="stat-label">linguagem de coração</div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-num">FS</div>
+          <div class="stat-label">objetivo fullstack</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="projects-header">
+      <div>
+        <p class="section-label">projetos</p>
+        <h2>O que construí.</h2>
+      </div>
+      <a href="https://github.com/PedroPrado23" target="_blank" class="btn-ghost">ver no GitHub →</a>
+    </div>
+
+    <div class="project-grid">
+
+      <!-- API REST -->
+      <a href="https://github.com/PedroPrado23/API-Tarefas" target="_blank" class="project-card">
+        <div class="proj-top">
+          <div class="proj-icon">🌐</div>
+          <span class="proj-arrow">↗</span>
+        </div>
+        <div class="proj-title">API REST com Spring Boot</div>
+        <p class="proj-desc">
+          API RESTful construída com Spring Boot utilizando HashMap como estrutura de dados central para armazenamento e
+          recuperação eficiente. Endpoints CRUD completos com tratamento de erros e boas práticas de arquitetura.
+        </p>
+        <div class="proj-tags">
+          <span class="tag tag-accent">Java</span>
+          <span class="tag">Spring Boot</span>
+          <span class="tag">REST</span>
+          <span class="tag">HashMap</span>
+        </div>
+      </a>
+
+      <!-- FCFS -->
+      <a href="https://github.com/PedroPrado23/Escalonamento-SO" target="_blank" class="project-card">
+        <div class="proj-top">
+          <div class="proj-icon">⚙️</div>
+          <span class="proj-arrow">↗</span>
+        </div>
+        <div class="proj-title">Simulador de Escalonamento FCFS</div>
+        <p class="proj-desc">
+          Simulação do algoritmo de escalonamento First Come First Served em C puro. Implementa a fila de processos,
+          calcula tempo de espera, turnaround e utilização da CPU com saída detalhada.
+        </p>
+        <div class="proj-tags">
+          <span class="tag tag-accent">C</span>
+          <span class="tag">SO</span>
+          <span class="tag">Escalonamento</span>
+          <span class="tag">Processos</span>
+        </div>
+      </a>
+
+      <!-- HOSPITAL -->
+      <a href="https://github.com/PedroPrado23/HN" target="_blank" class="project-card">
+        <div class="proj-top">
+          <div class="proj-icon">🏥</div>
+          <span class="proj-arrow">↗</span>
+        </div>
+        <div class="proj-title">Página Web Hospitalar</div>
+        <p class="proj-desc">
+          Interface web institucional para ambiente hospitalar, desenvolvida com HTML, CSS e JavaScript puro.
+          Layout responsivo com foco em clareza visual e experiência do usuário.
+        </p>
+        <div class="proj-tags">
+          <span class="tag tag-accent">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JS</span>
+        </div>
+      </a>
+
+
+      <a href="https://github.com/PedroPrado23/Mini-ecommerce" target="_blank" class="project-card">
+        <div class="proj-top">
+          <div class="proj-icon">🛒</div>
+          <span class="proj-arrow">↗</span>
+        </div>
+        <div class="proj-title">Mini E-commerce Full Stack</div>
+        <p class="proj-desc">
+          Sistema de e-commerce completo com backend em Java Spring Boot e MySQL, integrado a uma interface web em
+          React.
+          Projeto focado em arquitetura full stack, com consumo de API REST, organização de camadas e persistência de
+          dados.
+        </p>
+        <div class="proj-tags">
+          <span class="tag tag-accent">Java</span>
+          <span class="tag">Spring Boot</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">React</span>
+          <span class="tag">JavaScript</span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <div>
+      <p class="section-label">contato</p>
+      <h2>Vamos construir algo.</h2>
+      <p class="about-text" style="margin-top: 1rem;">
+        Estou procurando oportunidades em <strong>desenvolvimento de software</strong> — seja estágio, trainee ou
+        junior. Me chama!
+      </p>
+    </div>
+    <div class="contact-links">
+      <a href="https://github.com/PedroPrado23" target="_blank" class="contact-link">
+        <div class="contact-link-label">
+          <div class="contact-link-icon">⌥</div>
+          <span>GitHub · PedroPrado23</span>
+        </div>
+        <span>↗</span>
+      </a>
+      <a href="https://www.linkedin.com/in/pedro-gomes-do-prado" target="_blank" class="contact-link">
+        <div class="contact-link-label">
+          <div class="contact-link-icon">in</div>
+          <span>LinkedIn · Pedro Gomes Do Prado</span>
+        </div>
+        <span>↗</span>
+      </a>
+      <a href="mailto:pedroprado2306@gmail.com" class="contact-link">
+        <div class="contact-link-label">
+          <div class="contact-link-icon">@</div>
+          <span>Email · pedroprado2306@gmail.com</span>
+        </div>
+        <span>→</span>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Pedro Prado · IFF Itaperuna</p>
+    <p><a href="https://github.com/PedroPrado23" target="_blank">github.com/PedroPrado23</a></p>
+  </footer>
 
 </body>
+
 </html>
